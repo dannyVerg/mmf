@@ -132,11 +132,17 @@ class MultiDatasetLoader:
 
             if hasattr(dataset_instance, "__len__"):
                 dataset_instance_length = len(dataset_instance)
+                print()
+                print("dataset_instance_length = len(dataset_instance) "+ str(dataset_instance_length))
+                print()
                 assert dataset_instance_length, f"dataset: {self.dataset_type} is empty"
                 self._per_dataset_lengths.append(dataset_instance_length)
                 self._total_length += dataset_instance_length
 
         self._num_datasets = len(self.datasets)
+        print()
+        print("self._num_datasets = len(self.datasets)"+str(self._num_datasets))
+        print()
         self.current_index = 0
         self.current_dataset = self.datasets[self.current_index]
 

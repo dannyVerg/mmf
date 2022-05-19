@@ -274,6 +274,9 @@ class VisualBERTForPretraining(nn.Module):
 class VisualBERTForClassification(nn.Module):
     def __init__(self, config):
         super().__init__()
+        print()
+        print("config "+str(config))
+        print()
         self.config = config
         self.output_attentions = self.config.output_attentions
         self.output_hidden_states = self.config.output_hidden_states
@@ -311,6 +314,9 @@ class VisualBERTForClassification(nn.Module):
 
         self.training_head_type = self.config.training_head_type
         self.num_labels = self.config.num_labels
+        print()
+        print("self.config.num_labels " + str(self.config.num_labels))
+        print()
         self.dropout = nn.Dropout(self.bert.config.hidden_dropout_prob)
         if self.config.training_head_type == "nlvr2":
             self.bert.config.hidden_size *= 2
@@ -395,11 +401,15 @@ class VisualBERT(BaseModel):
         self.config = config
         self.training_head_type: str = self.config.training_head_type
 
+
     @classmethod
     def config_path(cls):
         return "configs/models/visual_bert/pretrain.yaml"
 
     def build(self):
+        print()
+        print("config_path "+str(config_path(cls)))
+        print()
         if self.training_head_type == "pretraining":
             self.model = VisualBERTForPretraining(self.config)
         else:
