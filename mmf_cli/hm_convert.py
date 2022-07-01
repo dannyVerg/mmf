@@ -16,11 +16,12 @@ class HMConverter:
     IMAGE_FILES = ["img.tar.gz", "img"]
     JSONL_PHASE_ONE_FILES = ["train.jsonl", "dev.jsonl", "test.jsonl"]
     JSONL_PHASE_TWO_FILES = [
-        "train.jsonl",
-        "dev_seen.jsonl",
-        "test_seen.jsonl",
-        "dev_unseen.jsonl",
-        "test_unseen.jsonl",
+        "train_type.jsonl",
+        "dev_unseen_type.jsonl",
+        "test_unseen_type.jsonl",
+        "train_cat.jsonl",
+        "dev_unseen_cat.jsonl",
+        "test_unseen_cat.jsonl"
     ]
     POSSIBLE_CHECKSUMS = [
         "d8f1073f5fbf1b08a541cc2325fc8645619ab8ed768091fb1317d5c3a6653a77",
