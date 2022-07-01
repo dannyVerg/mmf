@@ -407,9 +407,6 @@ class VisualBERT(BaseModel):
         return "configs/models/visual_bert/pretrain.yaml"
 
     def build(self):
-        print()
-        print("config_path "+str(config_path(cls)))
-        print()
         if self.training_head_type == "pretraining":
             self.model = VisualBERTForPretraining(self.config)
         else:
