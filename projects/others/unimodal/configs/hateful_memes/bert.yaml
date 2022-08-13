@@ -9,7 +9,7 @@ model_config:
       type: mlp
       params:
         in_dim: 768
-        num_layers: 2
+        num_layers: 8
 
 training:
   batch_size: 128
