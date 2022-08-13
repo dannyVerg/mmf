@@ -7,7 +7,7 @@ model_config:
     # Dimension of the embedding finally returned by the modal encoder
     modal_hidden_size: 2048
     # Used when classification head is activated
-    num_labels: 2
+    num_labels: 8
     modal_encoder:
       type: resnet152
       params:

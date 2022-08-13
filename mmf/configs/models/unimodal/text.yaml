@@ -7,7 +7,7 @@ model_config:
     # Dimension of the embedding finally returned by the text encoder
     text_hidden_size: 300
     # Used when classification head is activated
-    num_labels: 2
+    num_labels: 8
     text_encoder:
       type: embedding
       params:

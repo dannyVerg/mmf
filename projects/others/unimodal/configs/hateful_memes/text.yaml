@@ -3,7 +3,7 @@ model_config:
     classifier:
       type: mlp
       params:
-        num_layers: 8
+        num_layers: 2
     losses:
     - type: cross_entropy
 

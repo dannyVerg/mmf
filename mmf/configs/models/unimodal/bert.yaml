@@ -2,7 +2,7 @@ model_config:
   unimodal_text:
     bert_model_name: bert-base-uncased
     text_hidden_size: 768
-    num_labels: 2
+    num_labels: 8
     text_encoder:
       type: transformer
       params:

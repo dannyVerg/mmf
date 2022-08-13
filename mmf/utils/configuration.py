@@ -395,6 +395,9 @@ class Configuration:
 
             splits = opt.split(".")
             current = config
+            print()
+            print(current)
+            print()
             for idx, field in enumerate(splits):
                 array_index = -1
                 if field.find("[") != -1 and field.find("]") != -1:
