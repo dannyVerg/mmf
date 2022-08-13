@@ -4,7 +4,7 @@ includes:
 model_config:
   visual_bert:
     training_head_type: classification
-    num_labels: 9
+    num_labels: 8
     losses:
     - cross_entropy
 
