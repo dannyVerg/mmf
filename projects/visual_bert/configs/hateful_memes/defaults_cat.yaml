@@ -52,5 +52,3 @@ training:
 checkpoint:
   pretrained_state_mapping:
     model.bert: model.bert
-  resume_pretrained: true
-  resume_zoo: visual_bert.pretrained.coco
